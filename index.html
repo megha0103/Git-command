@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://cdn.jsdelivr.net/npm/vue/dst/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="example-1">
+        <button v-on:click="counter += 1">Add 1</button>
+        <p>The button above has been clicked {{ counter }} times.</p>
+    </div>
+    <div id="example-2">
+
+        <!-- <input v-model="msg" id="name" /> -->
+        <input v-model="values" placeholder="your Name Please" />
+        <button v-on:click="greet">SUBMIT</button>
+
+    </div>
+    <div id="list">
+        <input v-model="listvalue" placeholder="your value" />
+        <button v-on:click="add1">ADD</button>
+        <h4>{{ list1 }}</h4>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
